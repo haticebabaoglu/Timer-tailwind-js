@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>document</title>
+  
+</head>
+<body class="min-h-screen flex items-center justify-center">
+    <div class="bg-white rounded-lg shadow-lg p-6 max-w-sm w-full">
+        <h1 class="text-3xl font-bold mb-4 text-center">Timer</h1>
+        <div class="text-4xl font-bold mb-6 text-center"> <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span></div>
+        <div class="flex justify-center gap-2 mb-6">
+            <input type="number" min="0" max="59" id="selectedHours" placeholder="Hour" class="w-20 p-2 border rounded-lg">
+            <input type="number" min="0" max="60" id="selectedMinutes" placeholder="Minute" class="w-20 p-2 border rounded-lg">
+            <input type="number" min="0" max="100" id="selectedSeconds" placeholder="Second" class="w-20 p-2 border rounded-lg">
+        </div>
+        <div class="flex justify-center gap-2">
+            <button id="startBtn" class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 text-center">Start</button>
+            <button id="stopBtn" class="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-600 text-center">Stop</button> 
+            
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
